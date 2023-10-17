@@ -5,10 +5,10 @@ import morgan from "morgan";
 import swaggerjsdoc from "swagger-jsdoc";
 import swaggerUI = require("swagger-ui-express");
 import registrationRouter from "../src/routes/registration";
-import Specialists from "./schemas/sp.ts";
+import Specialists from "../src/database/schemas/sp";
 import { error } from "console";
 
-const app = express();
+export const app = express();
 dotenv.config();
 app.use(express.json());
 
